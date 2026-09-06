@@ -58,7 +58,7 @@ while current_song != "siaca bo":
         time.sleep(3)
         pestaña_principal = driver.current_window_handle
 
-        driver.find_element(By.ID, "video").send_keys(link_url)
+        driver.find_element(By.ID, "link").send_keys(link_url)
         time.sleep(2)
         
         boton = driver.find_element(By.XPATH, "//button[@type='submit']")
